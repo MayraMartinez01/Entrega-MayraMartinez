@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servicios - Gimnasio Montevideo</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <!-- Enlace al archivo CSS de Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Enlace al archivo CSS de Bootstrap -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Gimnasio Montevideo</h1>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="servicios.html">Servicios</a></li>
+                <li><a href="horarios.html">Horarios</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="services">
+        <h2>Servicios</h2>
+        <!-- Carrusel de imágenes -->
+        <div id="carouselServices" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselServices" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselServices" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselServices" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="../img/gym-526995_960_720.jpg" class="d-block w-100" alt="Servicio 1">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Servicio 1</h5>
+                        <p>Descripción breve del Servicio 1.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="../img/yoga2.jpg" class="d-block w-100" alt="Servicio 2">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Servicio 2</h5>
+                        <p>Descripción breve del Servicio 2.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="../img/training-828764_1280.jpg" class="d-block w-100" alt="Servicio 3">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Servicio 3</h5>
+                        <p>Descripción breve del Servicio 3.</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselServices" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselServices" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Siguiente</span>
+            </button>
+        </div>
+
+        <!-- Detalles de los servicios -->
+        <div class="container mt-4">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="service">
+                        <h3>Entrenamiento Personal</h3>
+                        <p>Ofrecemos entrenamiento personal adaptado a tus necesidades y objetivos. Nuestros entrenadores están certificados y listos para ayudarte a alcanzar tus metas.</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="service">
+                        <h3>Clases de Yoga</h3>
+                        <p>Nuestras clases de yoga son perfectas para todos los niveles. Mejora tu flexibilidad, fuerza y bienestar general con nuestras sesiones guiadas por expertos.</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="service">
+                        <h3>Clases de Spinning</h3>
+                        <p>Únete a nuestras intensas clases de spinning y mejora tu resistencia cardiovascular. Nuestras sesiones están diseñadas para quemar calorías y fortalecer tu corazón.</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="service">
+                        <h3>Área de Pesas</h3>
+                        <p>Nuestra área de pesas está equipada con lo último en equipos de musculación. Perfecta para quienes buscan aumentar su fuerza y masa muscular.</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="service">
+                        <h3>Planes Nutricionales</h3>
+                        <p>Ofrecemos planes nutricionales personalizados para complementar tu régimen de ejercicios y ayudarte a alcanzar tus objetivos de salud y fitness.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="testimonials">
+        <h2>Testimonios</h2>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="testimonial">
+                        <p>"El entrenamiento personal en Gimnasio Montevideo me ayudó a superar mis límites y alcanzar mis metas de fitness. ¡Recomendado!" - Juan P.</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="testimonial">
+                        <p>"Las clases de yoga son increíbles, me siento más flexible y relajado. Los instructores son muy profesionales." - Ana G.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="trainers">
+        <h2>Nuestros Entrenadores</h2>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="trainer">
+                        <h3>Pedro López</h3>
+                        <p>Entrenador Personal Certificado con 10 años de experiencia en el campo del fitness y la nutrición.</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="trainer">
+                        <h3>María Fernández</h3>
+                        <p>Instructora de Yoga y Pilates, especializada en técnicas de relajación y bienestar.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact-form">
+        <h2>Consulta sobre nuestros servicios</h2>
+        <div class="container">
+            <form action="submit_form.php" method="post">
+                <div class="mb-3">
+                    <label for="name" class="form-label">Tu nombre</label>
+                    <input type="text" name="name" class="form-control" id="name" placeholder="Tu nombre" required>
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Tu email</label>
+                    <input type="email" name="email" class="form-control" id="email" placeholder="Tu email" required>
+                </div>
+                <div class="mb-3">
+                    <label for="message" class="form-label">Tu mensaje</label>
+                    <textarea name="message" class="form-control" id="message" rows="5" placeholder="Tu mensaje" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Enviar</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Gimnasio Montevideo. Todos los derechos reservados.</p>
+    </footer>
+
+    <!-- Enlace al archivo JS de Bootstrap -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

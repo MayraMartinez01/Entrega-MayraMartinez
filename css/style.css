@@ -1,0 +1,269 @@
+/* Estilos generales */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    display: grid;
+    grid-template-rows: auto 1fr auto; /* Filas: encabezado, contenido, pie de página */
+    min-height: 100vh;
+}
+
+/* Estilo del encabezado y la navegación */
+header {
+    background-image: url('../img/header-background.jpg'); /* Cambiar ruta a tu imagen de fondo */
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 50px 0;
+    text-align: center;
+    grid-row: 1; /* Asegura que el encabezado esté en la primera fila */
+}
+
+header h1 {
+    margin: 0;
+    font-size: 3em;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo semi-transparente */
+    border-radius: 5px;
+    margin-top: 20px;
+    padding: 10px;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: block;
+}
+
+nav ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.2); /* Efecto de hover */
+}
+
+/* Estilo del contenido principal */
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+    padding: 20px;
+    grid-row: 2; /* El contenido va en la segunda fila */
+}
+
+/* Estilo del pie de página */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    position: relative; /* Cambiado a relativo para mantenerlo al final de la página */
+    grid-row: 3; /* El pie de página en la tercera fila */
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Estilo para los íconos de redes sociales en el pie de página */
+footer .social-media {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+footer .social-media a {
+    color: white;
+    text-decoration: none;
+    font-size: 24px;
+    transition: color 0.3s;
+}
+
+footer .social-media a:hover {
+    color: #ddd;
+}
+
+/* Estilo para los botones */
+.btn {
+    display: inline-block;
+    background-color: #0066cc;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #0052a3; /* Cambio de color al hacer hover */
+}
+
+/* Media queries para responsive design */
+@media (max-width: 992px) {
+    /* Ajustes para tablets */
+    main {
+        grid-template-columns: 1fr; /* Una columna en tablets */
+    }
+}
+
+@media (max-width: 768px) {
+    /* Ajustes para dispositivos móviles */
+    header h1 {
+        font-size: 2.5em;
+    }
+
+    nav ul {
+        flex-wrap: wrap; /* Ajustar al ancho del dispositivo móvil */
+    }
+
+    .btn {
+        display: block;
+        width: 100%; /* Botones ocupan todo el ancho */
+        margin-bottom: 10px; /* Espacio entre botones */
+    }
+}
+
+/* Estilos específicos para las secciones */
+section {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+section h2 {
+    color: #0066cc;
+    border-bottom: 2px solid #0066cc;
+    padding-bottom: 10px;
+}
+
+/* Estilos para el carrusel */
+#carouselExampleIndicators {
+    max-width: 100%; /* Ajuste máximo de la anchura */
+    margin-bottom: 20px; /* Espacio inferior */
+}
+
+#carouselExampleIndicators .carousel-item img {
+    max-width: 100%; /* Imágenes responsivas */
+    height: auto;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    width: 5%; /* Tamaño de los controles */
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    filter: invert(100%); /* Iconos de controles invertidos */
+}
+
+.carousel-caption {
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo semi-transparente */
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* Estilos específicos para las tarjetas de servicios */
+.card {
+    border: none; /* Sin borde en las tarjetas */
+    border-radius: 10px;
+    overflow: hidden; /* Evitar que las imágenes se desborden */
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.card-img-top {
+    border-radius: 10px 10px 0 0; /* Bordes redondeados solo arriba */
+}
+
+.card-body {
+    padding: 20px;
+}
+
+.card-title {
+    font-weight: bold;
+}
+
+.card-text {
+    margin-bottom: 15px;
+}
+
+.list-group-item {
+    border: none; /* Sin borde en los ítems de la lista */
+}
+
+/* Estilos específicos para la tabla de horarios */
+.table {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.table th,
+.table td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Estilos para el formulario de contacto */
+form {
+    max-width: 400px;
+    margin: auto;
+    padding: 20px;
+}
+
+form input,
+form textarea {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+form button {
+    padding: 10px 20px;
+    background-color: #0066cc;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+form button:hover {
+    background-color: #0052a3;
+}
+
+/* Media queries adicionales para diseño responsivo */
+@media screen and (max-width: 576px) {
+    header h1 {
+        font-size: 1.5em;
+    }
+
+    nav ul li {
+        font-size: 0.9em;
+    }
+
+    .container {
+        padding: 10px;
+    }
+
+    .table th, .table td {
+        font-size: 14px;
+        padding: 8px;
+    }
+}
