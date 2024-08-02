@@ -1,0 +1,17 @@
+main {
+  padding: 20px;
+}
+
+section {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+section h2 {
+  color: $primary-color;
+  border-bottom: 2px solid $primary-color;
+  padding-bottom: 10px;
+}

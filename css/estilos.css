@@ -1,0 +1,169 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #f8f9fa;
+    padding: 20px;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #007bff;
+}
+
+main {
+    padding: 40px;
+}
+
+/* Estilos generales para el carrusel */
+.carousel {
+    position: relative;
+    overflow: hidden;
+    height: 300px; /* Ajusta la altura según sea necesario */
+}
+
+.carousel-item img {
+    object-fit: cover; /* Asegura que las imágenes llenen el espacio del carrusel */
+    height: 100%; /* Ajusta la altura para que se adapte al contenedor */
+    width: 100%; /* Ajusta el ancho para que se adapte al contenedor */
+}
+
+/* Estilos de los controles del carrusel */
+.carousel-control-prev, .carousel-control-next {
+    width: 5%;
+    background-color: rgba(0,0,0,0.5); /* Color de fondo de los controles */
+}
+
+.carousel-control-prev-icon, .carousel-control-next-icon {
+    background-color: rgba(0,0,0,0.5); /* Color de fondo de los íconos */
+}
+
+/* Estilos de los indicadores del carrusel */
+.carousel-indicators {
+    bottom: 10px; /* Posición de los indicadores */
+}
+
+.carousel-indicators .active {
+    background-color: #000; /* Color del indicador activo */
+}
+
+/* Estilos para las animaciones con AOS */
+[data-aos="fade-up"] {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s, transform 0.6s;
+}
+
+[data-aos="fade-up"].aos-init {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+[data-aos="fade-left"] {
+    opacity: 0;
+    transform: translateX(-20px);
+    transition: opacity 0.6s, transform 0.6s;
+}
+
+[data-aos="fade-left"].aos-init {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+[data-aos="fade-right"] {
+    opacity: 0;
+    transform: translateX(20px);
+    transition: opacity 0.6s, transform 0.6s;
+}
+
+[data-aos="fade-right"].aos-init {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+[data-aos="flip-left"] {
+    transform: rotateY(90deg);
+    transition: transform 0.6s;
+}
+
+[data-aos="flip-left"].aos-init {
+    transform: rotateY(0);
+}
+
+[data-aos="flip-right"] {
+    transform: rotateY(-90deg);
+    transition: transform 0.6s;
+}
+
+[data-aos="flip-right"].aos-init {
+    transform: rotateY(0);
+}
+
+[data-aos="flip-up"] {
+    transform: rotateX(-90deg);
+    transition: transform 0.6s;
+}
+
+[data-aos="flip-up"].aos-init {
+    transform: rotateX(0);
+}
+
+/* Estilos adicionales */
+section {
+    padding: 40px;
+}
+
+footer {
+    background-color: #f8f9fa;
+    padding: 20px;
+    text-align: center;
+}
+
+.social-media a {
+    margin: 0 10px;
+    color: #007bff;
+}
+
+.social-media a:hover {
+    color: #0056b3;
+}
+
+/* Estilos de los elementos de la lista de servicios */
+ul.list-group {
+    margin-top: 1rem;
+}
+
+ul.list-group-item {
+    transition: background-color 0.3s ease;
+}
+
+ul.list-group-item:hover {
+    background-color: #f8f9fa;
+}
+
+/* Estilos para las tarjetas de servicios */
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}

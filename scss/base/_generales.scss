@@ -1,0 +1,22 @@
+// _generales.scss
+body {
+    margin: 0;
+    padding: 0;
+    background-color: $background-color;
+  }
+  
+  a {
+    color: $primary-color;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  header, footer {
+    background-color: $secondary-color;
+    color: #fff;
+    padding: 1rem;
+  }
+  

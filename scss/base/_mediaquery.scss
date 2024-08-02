@@ -1,0 +1,21 @@
+// Para tablets y dispositivos pequeños
+@media (max-width: 992px) {
+  body {
+    font-size: 14px;
+  }
+
+  .container {
+    padding: 10px;
+  }
+}
+
+// Para dispositivos móviles
+@media (max-width: 768px) {
+  body {
+    font-size: 12px;
+  }
+
+  .container {
+    padding: 5px;
+  }
+}

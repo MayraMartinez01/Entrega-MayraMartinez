@@ -3,167 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Gimnasio Montevideo: tu lugar para alcanzar tus metas de fitness con instalaciones modernas y servicios especializados.">
+    <meta name="keywords" content="gimnasio, entrenamiento, fitness, yoga, spinning, nutrición, Montevideo">
     <title>Gimnasio Montevideo</title>
-    <!-- Enlace al archivo CSS de Font Awesome -->
+    <link rel="stylesheet" href="css/estilos.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <!-- Enlace al archivo CSS de Bootstrap -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
-    <style>
-        /* Estilos generales */
-        body {
-            font-family: 'Arial', sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-            color: #333;
-        }
-
-        /* Estilo del encabezado y la navegación */
-        header {
-            background-image: url('img/header-background.jpg'); /* Cambiar ruta a tu imagen de fondo */
-            background-size: cover;
-            background-position: center;
-            color: white;
-            padding: 50px 0;
-            text-align: center;
-        }
-
-        header h1 {
-            margin: 0;
-            font-size: 3em;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-        }
-
-        nav ul {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-            display: flex;
-            justify-content: center;
-            background-color: rgba(0, 0, 0, 0.5); /* Fondo semi-transparente */
-            border-radius: 5px;
-            margin-top: 20px;
-            padding: 10px;
-        }
-
-        nav ul li {
-            margin: 0 15px;
-        }
-
-        nav ul li a {
-            color: white;
-            text-decoration: none;
-            padding: 10px 20px;
-            display: block;
-        }
-
-        nav ul li a:hover {
-            background-color: rgba(255, 255, 255, 0.2); /* Efecto de hover */
-        }
-
-        /* Estilo de las secciones */
-        section {
-            padding: 40px;
-            margin: 20px auto; /* Centrar las secciones */
-            max-width: 1200px; /* Ancho máximo para las secciones */
-            background-color: white;
-            border-radius: 10px;
-            box-shadow: 0 0 20px rgba(0,0,0,0.1);
-        }
-
-        section h2 {
-            color: #0066cc;
-            border-bottom: 2px solid #0066cc;
-            padding-bottom: 10px;
-        }
-
-        section p, section ul, section table {
-            margin: 15px 0;
-        }
-
-        /* Estilo del pie de página */
-        footer {
-            background-color: #333;
-            color: white;
-            text-align: center;
-            padding: 20px 0;
-            position: relative; /* Cambiado a relativo para mantenerlo al final de la página */
-        }
-
-        footer p {
-            margin: 0;
-        }
-
-        /* Estilo para los íconos de redes sociales en el pie de página */
-        footer .social-media a {
-            color: white;
-            text-decoration: none;
-            margin: 0 15px; /* Aumentar el espacio entre los íconos */
-            font-size: 24px;
-            display: inline-block;
-            transition: color 0.3s;
-        }
-
-        footer .social-media a:hover {
-            color: #ddd;
-        }
-
-        /* Estilo para los botones */
-        .btn {
-            display: inline-block;
-            background-color: #0066cc;
-            color: white;
-            padding: 10px 20px;
-            border-radius: 5px;
-            text-decoration: none;
-            transition: background-color 0.3s;
-        }
-
-        .btn:hover {
-            background-color: #0052a3; /* Cambio de color al hacer hover */
-        }
-
-        /* Media queries para responsive design */
-        @media (max-width: 992px) {
-            /* Ajustes para tablets */
-            section {
-                padding: 20px;
-                margin: 10px auto;
-            }
-
-            header h1 {
-                font-size: 2.5em;
-            }
-        }
-
-        @media (max-width: 768px) {
-            /* Ajustes para dispositivos móviles */
-            nav ul {
-                flex-wrap: wrap; /* Ajustar al ancho del dispositivo móvil */
-            }
-
-            .btn {
-                display: block;
-                width: 100%; /* Botones ocupan todo el ancho */
-                margin-bottom: 10px; /* Espacio entre botones */
-            }
-        }
-
-        @media (max-width: 576px) {
-            /* Ajustes para dispositivos móviles pequeños */
-            header h1 {
-                font-size: 2em;
-            }
-
-            nav ul li {
-                margin: 0 10px;
-            }
-
-            .btn {
-                width: 100%;
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
 </head>
 <body>
     <header>
@@ -179,137 +25,138 @@
         </nav>
     </header>
 
-    <section id="inicio">
-        <!-- Carrusel de imágenes -->
-        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-            <ol class="carousel-indicators">
-                <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"></li>
-                <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"></li>
-                <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"></li>
-            </ol>
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="img/barra2.jpeg" class="d-block w-100" alt="...">
+    <main>
+        <section id="inicio" data-aos="fade-up">
+            <!-- Carrusel de imágenes -->
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"></li>
+                    <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"></li>
+                    <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="img/barra2.jpeg" class="d-block w-100" alt="Imagen de barra">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/caminadora.jpeg" class="d-block w-100" alt="Imagen de caminadora">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/crossfit-534615_1280.jpg" class="d-block w-100" alt="Imagen de crossfit">
+                    </div>
                 </div>
-                <div class="carousel-item">
-                    <img src="img/caminadora.jpeg" class="d-block w-100" alt="...">
-                </div>
-                <div class="carousel-item">
-                    <img src="img/crossfit-534615_1280.jpg" class="d-block w-100" alt="...">
-                </div>
+                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Anterior</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Siguiente</span>
+                </a>
             </div>
-            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </a>
-            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </a>
-        </div>
-        <div style="text-align: center; margin-top: 20px;">
-            <h2>¡Alcanza tus metas con nosotros!</h2>
-            <p>Descubre nuestras instalaciones de última generación.</p>
-            <a href="./pages/servicios.html" class="btn btn-primary">Ver nuestros servicios</a>
-        </div>
-    </section>
+            <div style="text-align: center; margin-top: 20px;">
+                <h2>¡Alcanza tus metas con nosotros!</h2>
+                <p>Descubre nuestras instalaciones de última generación.</p>
+                <a href="./pages/servicios.html" class="btn btn-primary">Ver nuestros servicios</a>
+            </div>
+        </section>
 
-    <section id="about">
-        <h2>Nosotros</h2>
-        <p>Bienvenidos al Gimnasio Montevideo, donde ofrecemos un ambiente motivador y profesional para ayudarte a alcanzar tus metas de fitness. Ubicados en el corazón de Montevideo, ofrecemos una variedad de servicios y clases para todos los niveles.</p>
-    </section>
+        <section id="about" data-aos="fade-left">
+            <h2>Nosotros</h2>
+            <p>Bienvenidos al Gimnasio Montevideo, donde ofrecemos un ambiente motivador y profesional para ayudarte a alcanzar tus metas de fitness. Ubicados en el corazón de Montevideo, ofrecemos una variedad de servicios y clases para todos los niveles.</p>
+        </section>
 
-    <section id="services">
-        <h2>Servicios</h2>
-        <ul class="list-group">
-            <li class="list-group-item"><i class="fas fa-dumbbell"></i> Entrenamiento personal</li>
-            <li class="list-group-item"><i class="fas fa-yoga"></i> Clases de yoga</li>
-            <li class="list-group-item"><i class="fas fa-bicycle"></i> Clases de spinning</li>
-            <li class="list-group-item"><i class="fas fa-weight-lifter"></i> Área de pesas</li>
-            <li class="list-group-item"><i class="fas fa-utensils"></i> Planes nutricionales</li>
-        </ul>
-        <div class="row row-cols-1 row-cols-md-3 g-4 mt-4">
-            <div class="col">
-                <div class="card">
-                    <img src="img/cuerda.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Servicio 1</h5>
-                        <p class="card-text">Descripción breve del Servicio 1.</p>
-                        <a href="#" class="btn btn-primary">Más detalles</a>
+        <section id="services" data-aos="fade-right">
+            <h2>Servicios</h2>
+            <ul class="list-group">
+                <li class="list-group-item"><i class="fas fa-dumbbell"></i> Entrenamiento personal</li>
+                <li class="list-group-item"><i class="fas fa-yoga"></i> Clases de yoga</li>
+                <li class="list-group-item"><i class="fas fa-bicycle"></i> Clases de spinning</li>
+                <li class="list-group-item"><i class="fas fa-weight-lifter"></i> Área de pesas</li>
+                <li class="list-group-item"><i class="fas fa-utensils"></i> Planes nutricionales</li>
+            </ul>
+            <div class="row row-cols-1 row-cols-md-3 g-4 mt-4">
+                <div class="col" data-aos="flip-left">
+                    <div class="card">
+                        <img src="img/cuerda.jpg" class="card-img-top" alt="Servicio 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Servicio 1</h5>
+                            <p class="card-text">Descripción breve del Servicio 1.</p>
+                            <a href="#" class="btn btn-primary">Más detalles</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col" data-aos="flip-up">
+                    <div class="card">
+                        <img src="img/yoga nueva.jpg" class="card-img-top" alt="Servicio 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Servicio 2</h5>
+                            <p class="card-text">Descripción breve del Servicio 2.</p>
+                            <a href="#" class="btn btn-primary">Más detalles</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col" data-aos="flip-right">
+                    <div class="card">
+                        <img src="img/pesas nuevas.jpg" class="card-img-top" alt="Servicio 3">
+                        <div class="card-body">
+                            <h5 class="card-title">Servicio 3</h5>
+                            <p class="card-text">Descripción breve del Servicio 3.</p>
+                            <a href="#" class="btn btn-primary">Más detalles</a>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="col">
-                <div class="card">
-                    <img src="img/yoga nueva.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Servicio 2</h5>
-                        <p class="card-text">Descripción breve del Servicio 2.</p>
-                        <a href="#" class="btn btn-primary">Más detalles</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card">
-                    <img src="img/pesas nuevas.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Servicio 3</h5>
-                        <p class="card-text">Descripción breve del Servicio 3.</p>
-                        <a href="#" class="btn btn-primary">Más detalles</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+        </section>
 
-    <section id="schedule">
-        <h2>Horarios</h2>
-        <table class="table table-striped">
-            <thead>
-                <tr>
-                    <th>Día</th>
-                    <th>Horario</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Lunes - Viernes</td>
-                    <td>6:00 AM - 10:00 PM</td>
-                </tr>
-                <tr>
-                    <td>Sábado</td>
-                    <td>8:00 AM - 8:00 PM</td>
-                </tr>
-                <tr>
-                    <td>Domingo</td>
-                    <td>Cerrado</td>
-                </tr>
-            </tbody>
-        </table>
-    </section>
+        <section id="schedule" data-aos="fade-up">
+            <h2>Horarios</h2>
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>Día</th>
+                        <th>Horario</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Lunes - Viernes</td>
+                        <td>6:00 AM - 10:00 PM</td>
+                    </tr>
+                    <tr>
+                        <td>Sábado</td>
+                        <td>8:00 AM - 8:00 PM</td>
+                    </tr>
+                    <tr>
+                        <td>Domingo</td>
+                        <td>Cerrado</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
 
-    <section id="contact">
-        <h2>Contacto</h2>
-        <p>Puedes encontrarnos en:</p>
-        <address>
-            Calle Principal, 123<br>
-            Montevideo, Uruguay<br>
-            Teléfono: 123-456-789<br>
-            Email: info@gimnasiomontevideo.com
-        </address>
-    </section>
+        <section id="contact" data-aos="fade-left">
+            <h2>Contacto</h2>
+            <p>Puedes encontrarnos en:</p>
+            <address>
+                Calle Principal, 123<br>
+                Montevideo, Uruguay<br>
+                Teléfono: 123-456-789<br>
+                Email: info@gimnasiomontevideo.com
+            </address>
+        </section>
+    </main>
 
     <footer>
-        <div class="social-media">
-            <a href="https://www.facebook.com/?locale=es_LA"><i class="fab fa-facebook-f"></i></a>
-            <a href="https://x.com/?lang=es"><i class="fab fa-twitter"></i></a>
-            <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
-        </div>
         <p>&copy; 2024 Gimnasio Montevideo. Todos los derechos reservados.</p>
     </footer>
 
-    <!-- Enlace al archivo JS de Bootstrap -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <!-- Enlace a los scripts de Bootstrap y AOS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        // Inicializar AOS
+        AOS.init();
+    </script>
 </body>
 </html>
-

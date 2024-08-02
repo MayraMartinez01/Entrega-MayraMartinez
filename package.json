@@ -1,0 +1,17 @@
+{
+  "name": "pre-entrega1martinez",
+  "version": "1.0.0",
+  "description": "Proyecto para la pre-entrega del curso.",
+  "main": "index.js",
+  "scripts": {
+    "build-css": "node-sass --include-path scss scss/estilos.scss css/estilos.css",
+    "start": "nodemon index.js"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "node-sass": "^7.0.1",
+    "nodemon": "^2.0.15"
+  },
+  "author": "Tu Nombre",
+  "license": "MIT"
+}

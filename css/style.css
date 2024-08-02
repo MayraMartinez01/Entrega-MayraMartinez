@@ -10,32 +10,33 @@ body {
     min-height: 100vh;
 }
 
-/* Estilo del encabezado y la navegación */
+/* Estilo del encabezado */
 header {
-    background-image: url('../img/header-background.jpg'); /* Cambiar ruta a tu imagen de fondo */
+    background-image: url('img/header-background.jpg'); /* Asegúrate de que esta ruta sea correcta */
     background-size: cover;
     background-position: center;
     color: white;
-    padding: 50px 0;
+    padding: 40px 20px; /* Ajusta el padding para un mejor ajuste */
     text-align: center;
-    grid-row: 1; /* Asegura que el encabezado esté en la primera fila */
+    position: relative; /* Asegúrate de que el contenido no se salga del área visible */
+    overflow: hidden; /* Evita el desbordamiento */
+    height: 300px; /* Ajusta la altura según sea necesario */
 }
 
 header h1 {
     margin: 0;
-    font-size: 3em;
+    font-size: 2.5em; /* Ajusta el tamaño del texto según tu preferencia */
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 nav ul {
     list-style: none;
     padding: 0;
-    margin: 0;
+    margin: 20px 0 0 0; /* Ajusta el margen superior */
     display: flex;
     justify-content: center;
     background-color: rgba(0, 0, 0, 0.5); /* Fondo semi-transparente */
     border-radius: 5px;
-    margin-top: 20px;
     padding: 10px;
 }
 
@@ -48,6 +49,7 @@ nav ul li a {
     text-decoration: none;
     padding: 10px 20px;
     display: block;
+    font-size: 1.2em; /* Ajusta el tamaño del texto */
 }
 
 nav ul li a:hover {
@@ -60,7 +62,6 @@ main {
     grid-template-columns: 1fr;
     grid-gap: 20px;
     padding: 20px;
-    grid-row: 2; /* El contenido va en la segunda fila */
 }
 
 /* Estilo del pie de página */
@@ -70,7 +71,6 @@ footer {
     text-align: center;
     padding: 20px 0;
     position: relative; /* Cambiado a relativo para mantenerlo al final de la página */
-    grid-row: 3; /* El pie de página en la tercera fila */
 }
 
 footer p {
@@ -121,7 +121,7 @@ footer .social-media a:hover {
 @media (max-width: 768px) {
     /* Ajustes para dispositivos móviles */
     header h1 {
-        font-size: 2.5em;
+        font-size: 2em;
     }
 
     nav ul {
@@ -154,11 +154,13 @@ section h2 {
 #carouselExampleIndicators {
     max-width: 100%; /* Ajuste máximo de la anchura */
     margin-bottom: 20px; /* Espacio inferior */
+    overflow: hidden; /* Evitar que el carrusel se desborde */
+    position: relative; /* Asegúrate de que el carrusel se mantenga dentro de su contenedor */
 }
 
 #carouselExampleIndicators .carousel-item img {
-    max-width: 100%; /* Imágenes responsivas */
-    height: auto;
+    width: 100%; /* Imágenes responsivas */
+    height: auto; /* Mantener la proporción */
 }
 
 .carousel-control-prev,
