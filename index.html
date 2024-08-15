@@ -15,21 +15,23 @@
 
 <body>
     <header>
-        <h1>Gimnasio Montevideo</h1>
-        <nav>
-            <button class="menu-toggle" aria-label="Abrir menú">
-                <span class="menu-icon"></span>
-                <span class="menu-icon"></span>
-                <span class="menu-icon"></span>
-            </button>
-            <ul class="nav-menu">
-                <li><a href="./index.html">Inicio</a></li>
-                <li><a href="./pages/nosotros.html">Nosotros</a></li>
-                <li><a href="./pages/servicios.html">Servicios</a></li>
-                <li><a href="./pages/horarios.html">Horarios</a></li>
-                <li><a href="./pages/contacto.html">Contacto</a></li>
-            </ul>
-        </nav>
+        <div class="container">
+            <h1>Gimnasio Montevideo</h1>
+            <nav>
+                <button class="menu-toggle" aria-label="Abrir menú">
+                    <span class="menu-icon"></span>
+                    <span class="menu-icon"></span>
+                    <span class="menu-icon"></span>
+                </button>
+                <ul class="nav-menu">
+                    <li><a href="./index.html">Inicio</a></li>
+                    <li><a href="./pages/nosotros.html">Nosotros</a></li>
+                    <li><a href="./pages/servicios.html">Servicios</a></li>
+                    <li><a href="./pages/horarios.html">Horarios</a></li>
+                    <li><a href="./pages/contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
     <main>
@@ -156,6 +158,15 @@
 
     <footer>
         <p>&copy; 2024 Gimnasio Montevideo. Todos los derechos reservados.</p>
+        <div class="social-media">
+            <a href="https://www.facebook.com/" target="_blank" aria-label="Facebook">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="https://www.instagram.com/" target="_blank" aria-label="Instagram">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <!-- Agrega más enlaces de redes sociales aquí -->
+        </div>
     </footer>
 
     <!-- Enlace a los scripts de Bootstrap y AOS -->
@@ -163,6 +174,16 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
     <script>
         AOS.init();
+
+        // Script para el menú hamburguesa
+        document.addEventListener('DOMContentLoaded', function () {
+            const menuToggle = document.querySelector('.menu-toggle');
+            const navMenu = document.querySelector('.nav-menu');
+
+            menuToggle.addEventListener('click', function () {
+                navMenu.classList.toggle('active');
+            });
+        });
     </script>
 </body>
 
