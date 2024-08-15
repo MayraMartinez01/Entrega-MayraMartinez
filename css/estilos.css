@@ -1,169 +1,276 @@
-/* Estilos generales */
-body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    color: #333;
+/* Reset general para márgenes y paddings */
+body, header, nav, ul, li, section, h2 {
     margin: 0;
     padding: 0;
+    font-family: Arial, sans-serif;
 }
 
+/* Estilo del header */
 header {
-    background-color: #f8f9fa;
-    padding: 20px;
+    background-color: #333;
+    color: #fff;
+    padding: 5px 10px; /* Reducido a la mitad del padding original */
     text-align: center;
 }
 
+/* Estilo del título dentro del header */
+header h1 {
+    margin: 0;
+    font-size: 18px; /* Reducido a la mitad del tamaño de fuente original */
+    font-weight: bold;
+}
+
+/* Estilo del nav dentro del header */
 nav ul {
     list-style: none;
     padding: 0;
+    margin: 5px 0 0; /* Reducido a la mitad del margen original */
+    text-align: center;
 }
 
 nav ul li {
     display: inline;
-    margin: 0 10px;
+    margin-right: 10px; /* Reducido a la mitad del margen derecho original */
 }
 
 nav ul li a {
+    color: #fff;
     text-decoration: none;
-    color: #007bff;
+    font-size: 14px; /* Reducido a la mitad del tamaño de fuente original */
 }
 
-main {
-    padding: 40px;
+nav ul li a:hover {
+    text-decoration: underline;
 }
 
-/* Estilos generales para el carrusel */
+/* Estilo del carrusel */
 .carousel {
-    position: relative;
-    overflow: hidden;
-    height: 300px; /* Ajusta la altura según sea necesario */
+    max-width: 800px;
+    margin: 20px auto;
 }
 
-.carousel-item img {
-    object-fit: cover; /* Asegura que las imágenes llenen el espacio del carrusel */
-    height: 100%; /* Ajusta la altura para que se adapte al contenedor */
-    width: 100%; /* Ajusta el ancho para que se adapte al contenedor */
+.carousel-inner img {
+    width: 100%;
+    height: auto;
 }
 
-/* Estilos de los controles del carrusel */
-.carousel-control-prev, .carousel-control-next {
-    width: 5%;
-    background-color: rgba(0,0,0,0.5); /* Color de fondo de los controles */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
-.carousel-control-prev-icon, .carousel-control-next-icon {
-    background-color: rgba(0,0,0,0.5); /* Color de fondo de los íconos */
-}
-
-/* Estilos de los indicadores del carrusel */
-.carousel-indicators {
-    bottom: 10px; /* Posición de los indicadores */
-}
-
-.carousel-indicators .active {
-    background-color: #000; /* Color del indicador activo */
-}
-
-/* Estilos para las animaciones con AOS */
-[data-aos="fade-up"] {
-    opacity: 0;
-    transform: translateY(20px);
-    transition: opacity 0.6s, transform 0.6s;
-}
-
-[data-aos="fade-up"].aos-init {
-    opacity: 1;
-    transform: translateY(0);
-}
-
-[data-aos="fade-left"] {
-    opacity: 0;
-    transform: translateX(-20px);
-    transition: opacity 0.6s, transform 0.6s;
-}
-
-[data-aos="fade-left"].aos-init {
-    opacity: 1;
-    transform: translateX(0);
-}
-
-[data-aos="fade-right"] {
-    opacity: 0;
-    transform: translateX(20px);
-    transition: opacity 0.6s, transform 0.6s;
-}
-
-[data-aos="fade-right"].aos-init {
-    opacity: 1;
-    transform: translateX(0);
-}
-
-[data-aos="flip-left"] {
-    transform: rotateY(90deg);
-    transition: transform 0.6s;
-}
-
-[data-aos="flip-left"].aos-init {
-    transform: rotateY(0);
-}
-
-[data-aos="flip-right"] {
-    transform: rotateY(-90deg);
-    transition: transform 0.6s;
-}
-
-[data-aos="flip-right"].aos-init {
-    transform: rotateY(0);
-}
-
-[data-aos="flip-up"] {
-    transform: rotateX(-90deg);
-    transition: transform 0.6s;
-}
-
-[data-aos="flip-up"].aos-init {
-    transform: rotateX(0);
-}
-
-/* Estilos adicionales */
+/* Estilo de las secciones */
 section {
-    padding: 40px;
-}
-
-footer {
-    background-color: #f8f9fa;
     padding: 20px;
+}
+
+/* Encabezados personalizados para "Servicios", "Contacto" y "Horarios" */
+#services h2, #schedules h2, #contact h2 {
+    font-size: 28px; /* Tamaño de fuente más grande para los encabezados */
+    font-weight: bold; /* Negrita para los encabezados */
+    color: #007bff; /* Color de texto personalizado */
+    border-bottom: 3px solid #007bff; /* Línea debajo del encabezado */
+    padding-bottom: 10px; /* Espacio debajo del encabezado */
+    margin-bottom: 0; /* Eliminar espacio debajo del encabezado */
+}
+
+/* Estilo específico para la sección "Servicios" */
+#services {
+    background-color: #f9f9f9; /* Color de fondo para destacar la sección */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Sombra para profundidad */
+}
+
+/* Estilo específico para la sección "Horarios" */
+#schedules {
+    background-color: #e9ecef; /* Color de fondo para destacar la sección */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Sombra para profundidad */
+}
+
+/* Estilo específico para la sección "Contacto" */
+#contact {
+    background-color: #ffffff; /* Color de fondo blanco para la sección de contacto */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Sombra para profundidad */
+}
+
+/* Estilo de la lista de servicios */
+.list-group-item {
+    display: flex;
+    align-items: center;
+}
+
+.list-group-item i {
+    margin-right: 10px;
+}
+
+/* Diseño de la cuadrícula */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.grid-item {
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* Estilos para los encabezados dentro de la cuadrícula */
+.grid-item h3 {
+    font-size: 20px;
+    margin-top: 0;
+}
+
+/* Estilos para listas dentro de la cuadrícula */
+.grid-item ul {
+    list-style: disc;
+    margin-left: 20px;
+}
+
+/* Estilo de la tabla de horarios */
+.table {
+    width: 100%;
+    margin: 20px 0;
+    border-collapse: collapse;
+}
+
+.table th, .table td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+.table th {
+    background-color: #f4f4f4;
+}
+
+/* Estilo del footer */
+footer {
+    background-color: #333;
+    color: #fff;
     text-align: center;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
 }
 
-.social-media a {
-    margin: 0 10px;
-    color: #007bff;
+footer a {
+    color: #fff;
+    text-decoration: none;
 }
 
-.social-media a:hover {
-    color: #0056b3;
+/* Estilo para el contenido dentro del grid */
+.grid-item p {
+    margin: 0 0 10px 0;
 }
 
-/* Estilos de los elementos de la lista de servicios */
-ul.list-group {
-    margin-top: 1rem;
+/* Estilo de los botones */
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
 }
 
-ul.list-group-item {
-    transition: background-color 0.3s ease;
+.btn-primary {
+    background-color: #007bff;
+    color: #fff;
 }
 
-ul.list-group-item:hover {
-    background-color: #f8f9fa;
+.btn-primary:hover {
+    background-color: #0056b3;
 }
 
-/* Estilos para las tarjetas de servicios */
+/* Estilo específico para el carrusel */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* Estilo de la sección de contacto */
+#contact {
+    padding: 20px;
+}
+
+#contact h2 {
+    margin: 0;
+}
+
+address {
+    font-style: normal;
+    line-height: 1.6;
+}
+
 .card {
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin: 10px 0;
 }
 
-.card:hover {
-    transform: scale(1.05);
-    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+/* Media Queries para mejorar la responsividad */
+
+/* Pantallas de hasta 768px (tabletas y móviles en orientación vertical) */
+@media (max-width: 768px) {
+    header {
+        padding: 10px;
+    }
+
+    header h1 {
+        font-size: 16px;
+    }
+
+    nav ul {
+        padding: 0;
+        margin: 10px 0 0;
+    }
+
+    nav ul li {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    nav ul li a {
+        font-size: 16px;
+    }
+
+    .carousel {
+        max-width: 100%;
+    }
+
+    .grid-container {
+        grid-template-columns: 1fr; /* Una columna en dispositivos pequeños */
+    }
+
+    .grid-item {
+        padding: 10px;
+    }
+
+    .table {
+        font-size: 14px; /* Ajusta el tamaño de fuente de la tabla */
+    }
+
+    footer {
+        font-size: 14px;
+        padding: 15px;
+    }
+
+    .btn {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+}
+
+/* Pantallas de hasta 576px (móviles en orientación vertical) */
+@media (max-width: 576px) {
+    .btn {
+        padding: 6px 12px;
+        font-size: 12px;
+    }
 }

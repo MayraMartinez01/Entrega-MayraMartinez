@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,11 +12,17 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
 </head>
+
 <body>
     <header>
         <h1>Gimnasio Montevideo</h1>
         <nav>
-            <ul>
+            <button class="menu-toggle" aria-label="Abrir menú">
+                <span class="menu-icon"></span>
+                <span class="menu-icon"></span>
+                <span class="menu-icon"></span>
+            </button>
+            <ul class="nav-menu">
                 <li><a href="./index.html">Inicio</a></li>
                 <li><a href="./pages/nosotros.html">Nosotros</a></li>
                 <li><a href="./pages/servicios.html">Servicios</a></li>
@@ -78,30 +85,30 @@
             <div class="row row-cols-1 row-cols-md-3 g-4 mt-4">
                 <div class="col" data-aos="flip-left">
                     <div class="card">
-                        <img src="img/cuerda.jpg" class="card-img-top" alt="Servicio 1">
+                        <img src="img/cuerda.jpg" class="card-img-top" alt="Entrenamiento personal">
                         <div class="card-body">
-                            <h5 class="card-title">Servicio 1</h5>
-                            <p class="card-text">Descripción breve del Servicio 1.</p>
+                            <h5 class="card-title">Entrenamiento personal</h5>
+                            <p class="card-text">Nuestros entrenadores personales te guiarán en un plan de ejercicios personalizado para alcanzar tus objetivos de forma efectiva y segura.</p>
                             <a href="#" class="btn btn-primary">Más detalles</a>
                         </div>
                     </div>
                 </div>
                 <div class="col" data-aos="flip-up">
                     <div class="card">
-                        <img src="img/yoga nueva.jpg" class="card-img-top" alt="Servicio 2">
+                        <img src="img/yoga nueva.jpg" class="card-img-top" alt="Clases de yoga">
                         <div class="card-body">
-                            <h5 class="card-title">Servicio 2</h5>
-                            <p class="card-text">Descripción breve del Servicio 2.</p>
+                            <h5 class="card-title">Clases de yoga</h5>
+                            <p class="card-text">Relájate y fortalece tu cuerpo con nuestras clases de yoga, diseñadas para todos los niveles de habilidad.</p>
                             <a href="#" class="btn btn-primary">Más detalles</a>
                         </div>
                     </div>
                 </div>
                 <div class="col" data-aos="flip-right">
                     <div class="card">
-                        <img src="img/pesas nuevas.jpg" class="card-img-top" alt="Servicio 3">
+                        <img src="img/pesas nuevas.jpg" class="card-img-top" alt="Área de pesas">
                         <div class="card-body">
-                            <h5 class="card-title">Servicio 3</h5>
-                            <p class="card-text">Descripción breve del Servicio 3.</p>
+                            <h5 class="card-title">Área de pesas</h5>
+                            <p class="card-text">Nuestro gimnasio cuenta con un área de pesas totalmente equipada para ayudarte a aumentar tu fuerza y musculatura.</p>
                             <a href="#" class="btn btn-primary">Más detalles</a>
                         </div>
                     </div>
@@ -155,8 +162,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
     <script>
-        // Inicializar AOS
         AOS.init();
     </script>
 </body>
+
 </html>

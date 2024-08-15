@@ -1,34 +1,112 @@
+// _header.scss
+
+// Estilos básicos del encabezado
 header {
   background-image: url('../img/header-background.jpg');
   background-size: cover;
   background-position: center;
-  color: white;
+  color: #fff;
   padding: 40px 20px;
   text-align: center;
+
+  // Ajuste de padding en pantallas pequeñas
+  @media (max-width: 768px) {
+    padding: 10px;
+  }
+
+  h1 {
+    font-size: 2.5em;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    margin: 0;
+
+    // Ajuste del tamaño de fuente en pantallas pequeñas
+    @media (max-width: 768px) {
+      font-size: 20px;
+    }
+  }
 }
 
-header h1 {
-  font-size: 2.5em;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+// Estilos para la barra de navegación
+nav {
+  margin-top: 10px;
+
+  ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+
+    li {
+      margin: 0 15px;
+
+      a {
+        color: #fff;
+        padding: 10px 20px;
+        display: block;
+        text-decoration: none;
+        font-size: 18px;
+
+        &:hover {
+          background-color: rgba(255, 255, 255, 0.2);
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+
+  // Ajuste para dispositivos móviles
+  @media (max-width: 768px) {
+    ul {
+      flex-direction: column;
+      align-items: center;
+
+      li {
+        margin-right: 0;
+        margin-bottom: 10px;
+      }
+    }
+  }
 }
 
-nav ul {
-  list-style: none;
+// Estilos para el botón hamburguesa
+.navbar-toggle {
+  display: none;
+
+  @media (max-width: 768px) {
+    display: block;
+    background: #333;
+    border: none;
+    color: #fff;
+    font-size: 24px;
+    padding: 10px;
+    cursor: pointer;
+  }
+}
+
+// Estilos para el menú desplegable
+.navbar-menu {
   display: flex;
-  justify-content: center;
-  padding: 0;
-}
+  flex-direction: column;
+  align-items: center;
+  display: none; // Oculta el menú por defecto
 
-nav ul li {
-  margin: 0 15px;
-}
+  // Animación para el menú desplegable
+  @keyframes slideDown {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
 
-nav ul li a {
-  color: white;
-  padding: 10px 20px;
-  display: block;
-}
+  animation: slideDown 0.3s ease-in-out;
 
-nav ul li a:hover {
-  background-color: rgba(255, 255, 255, 0.2);
+  // Muestra el menú en pantallas pequeñas cuando el botón es clickeado
+  @media (max-width: 768px) {
+    display: block;
+  }
 }

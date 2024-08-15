@@ -7,6 +7,108 @@
     <meta name="keywords" content="Gimnasio, Montevideo, Horarios, Fitness">
     <title>Horarios - Gimnasio Montevideo</title>
     <link rel="stylesheet" href="../css/style.css">
+    <style>
+        /* Estilos globales para eliminar márgenes y rellenos inesperados */
+        body, h1, h2, h3, p {
+            margin: 0;
+            padding: 0;
+        }
+        /* Reset general para márgenes y paddings */
+        body, header, section, footer {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Estilo del header */
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+            position: relative; /* Asegura que el header esté posicionado correctamente */
+            z-index: 10; /* Asegura que el header esté encima de otros elementos */
+            margin-bottom: 0; /* Asegura que no haya espacio debajo del header */
+        }
+
+        /* Estilo del título dentro del header */
+        header h1 {
+            font-size: 24px;
+            margin-bottom: 5px; /* Reduce el margen inferior del título */
+        }
+
+        /* Estilo del nav dentro del header */
+        header nav {
+            margin: 0; /* Elimina márgenes del nav */
+            padding: 0; /* Elimina padding del nav */
+        }
+
+        header nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        header nav ul li {
+            display: inline-block;
+            margin-right: 10px; /* Espacio entre los elementos de la lista */
+        }
+
+        header nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            padding: 5px 10px; /* Ajusta el padding de los enlaces */
+        }
+
+        /* Estilos para el main y la sección de horarios */
+        main {
+            margin: 0; /* Elimina margen superior del main */
+            padding: 0; /* Elimina padding del main */
+        }
+
+        #schedule {
+            padding: 20px;
+        }
+
+        .table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .table th, .table td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+
+        .table th {
+            background-color: #f4f4f4;
+        }
+
+        /* Estilo para la tabla de clases */
+        .classes-table {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr); /* 3 columnas iguales */
+            gap: 10px; /* Espacio entre las celdas */
+            margin-top: 20px;
+        }
+
+        .classes-table div {
+            background-color: #f9f9f9;
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .classes-table div.header {
+            font-weight: bold;
+            background-color: #eaeaea;
+        }
+
+        .classes-table div.time {
+            font-size: 14px;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -45,8 +147,38 @@
                         <td>Domingo</td>
                         <td>Cerrado</td>
                     </tr>
+                    <tr>
+                        <td>Festivos</td>
+                        <td>9:00 AM - 6:00 PM</td>
+                    </tr>
+                    <tr>
+                        <td>Horario Especial (Vacaciones)</td>
+                        <td>8:00 AM - 9:00 PM</td>
+                    </tr>
                 </tbody>
             </table>
+
+            <h2>Clases Disponibles</h2>
+            <div class="classes-table">
+                <div class="header">Clase</div>
+                <div class="header">Día</div>
+                <div class="header">Hora</div>
+                <div>Yoga</div>
+                <div>Lunes, Miércoles, Viernes</div>
+                <div class="time">8:00 AM - 9:00 AM</div>
+                <div>Pilates</div>
+                <div>Martes, Jueves</div>
+                <div class="time">6:00 PM - 7:00 PM</div>
+                <div>Entrenamiento Funcional</div>
+                <div>Lunes, Miércoles</div>
+                <div class="time">7:00 PM - 8:00 PM</div>
+                <div>Spinning</div>
+                <div>Martes, Jueves</div>
+                <div class="time">7:00 AM - 8:00 AM</div>
+                <div>Zumba</div>
+                <div>Viernes</div>
+                <div class="time">5:00 PM - 6:00 PM</div>
+            </div>
         </section>
     </main>
 

@@ -1,0 +1,23 @@
+// _animations.scss
+
+// Mixin para animación de desvanecimiento
+@mixin fadeIn($duration: 1s, $timing: ease-in-out) {
+    animation: fadeIn $duration $timing;
+}
+
+// Mixin para animación de desplazamiento hacia arriba
+@mixin slideUp($duration: 1s, $timing: ease-in-out) {
+    animation: slideUp $duration $timing;
+}
+
+// Keyframes para desvanecimiento
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+// Keyframes para desplazamiento hacia arriba
+@keyframes slideUp {
+    from { transform: translateY(20px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}

@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
+<head></head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Servicios - Gimnasio Montevideo</title>
@@ -9,6 +9,150 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <!-- Enlace al archivo CSS de Bootstrap -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Estilo del header */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    position: relative; /* Asegura que el header esté posicionado correctamente */
+    z-index: 10; /* Asegura que el header esté encima de otros elementos */
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2rem; /* Tamaño de fuente del título */
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 0; /* Espaciado del nav debajo del título */
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem; /* Tamaño de fuente del enlace */
+}
+
+header nav ul li a:hover {
+    text-decoration: underline;
+}
+
+        /* Estilos globales para eliminar márgenes y rellenos inesperados */
+        body, h1, h2, h3, p {
+            margin: 0;
+            padding: 0;
+        }
+        /* Reset general para márgenes y paddings */
+        body, header, section, footer {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Estilo del header */
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+            position: relative; /* Asegura que el header esté posicionado correctamente */
+            z-index: 10; /* Asegura que el header esté encima de otros elementos */
+        }
+
+        header nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        header nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        header nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        header nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        /* Estilo del carrusel */
+        .carousel {
+            max-width: 1000px; /* Ajusta el ancho máximo del carrusel */
+            margin: 20px auto; /* Centra el carrusel horizontalmente y añade margen vertical */
+            height: 500px; /* Ajusta la altura del carrusel */
+        }
+
+        .carousel-inner {
+            height: 100%; /* Hace que el contenedor interno ocupe toda la altura del carrusel */
+            position: relative;
+            overflow: hidden; /* Asegura que el contenido no se desborde */
+        }
+
+        .carousel-inner img {
+            width: 100%; /* Ajusta el ancho de las imágenes al ancho del carrusel */
+            height: 100%; /* Ajusta la altura de las imágenes al contenedor */
+            object-fit: cover; /* Ajusta la imagen para que cubra el contenedor sin distorsionar */
+        }
+
+        .carousel-control-prev-icon,
+        .carousel-control-next-icon {
+            background-color: rgba(0, 0, 0, 0.5); /* Fondo semi-transparente para las flechas */
+        }
+
+        /* Estilo de las secciones con cuadrícula */
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .service {
+            background-color: #f4f4f4;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .service h3 {
+            margin-top: 0;
+        }
+
+        /* Espaciado y estilo para el pie de página */
+        footer {
+            padding: 20px;
+            text-align: center;
+            background-color: #333;
+            color: white;
+        }
+
+        .social-icon {
+            color: white;
+            margin: 0 10px;
+            font-size: 24px;
+            text-decoration: none;
+        }
+
+        .social-icon:hover {
+            color: #ddd;
+        }
+
+        /* Asegura que el espacio alrededor del carrusel sea 0 */
+        #services {
+            padding: 0;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -37,21 +181,21 @@
                 <div class="carousel-item active">
                     <img src="../img/gym-526995_960_720.jpg" class="d-block w-100" alt="Servicio 1">
                     <div class="carousel-caption d-none d-md-block">
-                        <h5>Servicio 1</h5>
+                        <h5>Entrenamiento Personal</h5>
                         <p>Descripción breve del Servicio 1.</p>
                     </div>
                 </div>
                 <div class="carousel-item">
                     <img src="../img/yoga2.jpg" class="d-block w-100" alt="Servicio 2">
                     <div class="carousel-caption d-none d-md-block">
-                        <h5>Servicio 2</h5>
+                        <h5>Clases de Yoga</h5>
                         <p>Descripción breve del Servicio 2.</p>
                     </div>
                 </div>
                 <div class="carousel-item">
                     <img src="../img/training-828764_1280.jpg" class="d-block w-100" alt="Servicio 3">
                     <div class="carousel-caption d-none d-md-block">
-                        <h5>Servicio 3</h5>
+                        <h5>Spinning</h5>
                         <p>Descripción breve del Servicio 3.</p>
                     </div>
                 </div>
@@ -68,54 +212,34 @@
 
         <!-- Detalles de los servicios -->
         <div class="container mt-4">
-            <div class="row">
-                <div class="col-md-6">
-                    <div class="service">
-                        <h3>Entrenamiento Personal</h3>
-                        <p>Ofrecemos entrenamiento personal adaptado a tus necesidades y objetivos. Nuestros entrenadores están certificados y listos para ayudarte a alcanzar tus metas.</p>
-                    </div>
+            <div class="grid-container">
+                <div class="service">
+                    <h3>Entrenamiento Personal</h3>
+                    <p>Nos especializamos en crear planes de entrenamiento personalizados que se adaptan a tus necesidades específicas. Nuestro equipo de entrenadores te guiará en cada paso del proceso.</p>
                 </div>
-                <div class="col-md-6">
-                    <div class="service">
-                        <h3>Clases de Yoga</h3>
-                        <p>Nuestras clases de yoga son perfectas para todos los niveles. Mejora tu flexibilidad, fuerza y bienestar general con nuestras sesiones guiadas por expertos.</p>
-                    </div>
+                <div class="service">
+                    <h3>Clases de Yoga</h3>
+                    <p>Las clases de yoga en nuestro gimnasio están diseñadas para mejorar tu flexibilidad y fuerza mental. Ofrecemos sesiones para todos los niveles, desde principiantes hasta avanzados.</p>
                 </div>
-                <div class="col-md-6">
-                    <div class="service">
-                        <h3>Clases de Spinning</h3>
-                        <p>Únete a nuestras intensas clases de spinning y mejora tu resistencia cardiovascular. Nuestras sesiones están diseñadas para quemar calorías y fortalecer tu corazón.</p>
-                    </div>
+                <div class="service">
+                    <h3>Spinning</h3>
+                    <p>Disfruta de nuestras energéticas clases de spinning que te ayudarán a mejorar tu resistencia cardiovascular. Nuestros entrenadores te motivarán para alcanzar tus objetivos.</p>
                 </div>
-                <div class="col-md-6">
-                    <div class="service">
-                        <h3>Área de Pesas</h3>
-                        <p>Nuestra área de pesas está equipada con lo último en equipos de musculación. Perfecta para quienes buscan aumentar su fuerza y masa muscular.</p>
-                    </div>
+                <div class="service">
+                    <h3>Área de Musculación</h3>
+                    <p>La zona de pesas está equipada con las últimas máquinas y pesos libres para un entrenamiento efectivo. Perfecto para quienes desean ganar masa muscular y fuerza.</p>
                 </div>
-                <div class="col-md-6">
-                    <div class="service">
-                        <h3>Planes Nutricionales</h3>
-                        <p>Ofrecemos planes nutricionales personalizados para complementar tu régimen de ejercicios y ayudarte a alcanzar tus objetivos de salud y fitness.</p>
-                    </div>
+                <div class="service">
+                    <h3>Asesoramiento Nutricional</h3>
+                    <p>Complementa tu rutina de ejercicios con un plan nutricional personalizado. Nuestros expertos te ayudarán a alcanzar tus metas de salud y bienestar a través de una dieta balanceada.</p>
                 </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="testimonials">
-        <h2>Testimonios</h2>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6">
-                    <div class="testimonial">
-                        <p>"El entrenamiento personal en Gimnasio Montevideo me ayudó a superar mis límites y alcanzar mis metas de fitness. ¡Recomendado!" - Juan P.</p>
-                    </div>
+                <div class="service">
+                    <h3>Entrenamiento en Grupo</h3>
+                    <p>Participa en nuestras dinámicas sesiones de entrenamiento en grupo. Estas clases son ideales para quienes buscan motivación adicional y una experiencia social durante su rutina.</p>
                 </div>
-                <div class="col-md-6">
-                    <div class="testimonial">
-                        <p>"Las clases de yoga son increíbles, me siento más flexible y relajado. Los instructores son muy profesionales." - Ana G.</p>
-                    </div>
+                <div class="service">
+                    <h3>Recuperación y Estiramiento</h3>
+                    <p>Ofrecemos sesiones especializadas en recuperación y estiramiento para mejorar la movilidad y reducir el riesgo de lesiones. Perfecto para complementar cualquier rutina de entrenamiento.</p>
                 </div>
             </div>
         </div>
@@ -124,18 +248,14 @@
     <section id="trainers">
         <h2>Nuestros Entrenadores</h2>
         <div class="container">
-            <div class="row">
-                <div class="col-md-6">
-                    <div class="trainer">
-                        <h3>Pedro López</h3>
-                        <p>Entrenador Personal Certificado con 10 años de experiencia en el campo del fitness y la nutrición.</p>
-                    </div>
+            <div class="grid-container">
+                <div class="trainer">
+                    <h3>Pedro López</h3>
+                    <p>Entrenador Personal Certificado con 10 años de experiencia en el campo del fitness y la nutrición.</p>
                 </div>
-                <div class="col-md-6">
-                    <div class="trainer">
-                        <h3>María Fernández</h3>
-                        <p>Instructora de Yoga y Pilates, especializada en técnicas de relajación y bienestar.</p>
-                    </div>
+                <div class="trainer">
+                    <h3>María Fernández</h3>
+                    <p>Instructora de Yoga y Pilates, especializada en técnicas de relajación y bienestar.</p>
                 </div>
             </div>
         </div>
@@ -146,16 +266,16 @@
         <div class="container">
             <form action="submit_form.php" method="post">
                 <div class="mb-3">
-                    <label for="name" class="form-label">Tu nombre</label>
-                    <input type="text" name="name" class="form-control" id="name" placeholder="Tu nombre" required>
+                    <label for="name" class="form-label">Nombre</label>
+                    <input type="text" class="form-control" id="name" name="name" required>
                 </div>
                 <div class="mb-3">
-                    <label for="email" class="form-label">Tu email</label>
-                    <input type="email" name="email" class="form-control" id="email" placeholder="Tu email" required>
+                    <label for="email" class="form-label">Correo Electrónico</label>
+                    <input type="email" class="form-control" id="email" name="email" required>
                 </div>
                 <div class="mb-3">
-                    <label for="message" class="form-label">Tu mensaje</label>
-                    <textarea name="message" class="form-control" id="message" rows="5" placeholder="Tu mensaje" required></textarea>
+                    <label for="message" class="form-label">Mensaje</label>
+                    <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
                 </div>
                 <button type="submit" class="btn btn-primary">Enviar</button>
             </form>
@@ -164,9 +284,11 @@
 
     <footer>
         <p>&copy; 2024 Gimnasio Montevideo. Todos los derechos reservados.</p>
+        <a href="https://www.instagram.com/tu-gimnasio" class="social-icon" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.facebook.com/tu-gimnasio" class="social-icon" target="_blank"><i class="fab fa-facebook-f"></i></a>
     </footer>
 
-    <!-- Enlace al archivo JS de Bootstrap -->
+    <!-- Enlace a los scripts de Bootstrap -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
