@@ -1,5 +1,5 @@
 /* Reset general para márgenes y paddings */
-body, header, nav, ul, li, section, h2 {
+body, header, section, footer {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
@@ -9,54 +9,47 @@ body, header, nav, ul, li, section, h2 {
 header {
     background-color: #333;
     color: #fff;
-    padding: 5px 10px; /* Reducido a la mitad del padding original */
+    padding: 10px;
     text-align: center;
 }
 
-/* Estilo del título dentro del header */
 header h1 {
     margin: 0;
-    font-size: 18px; /* Reducido a la mitad del tamaño de fuente original */
+    font-size: 24px; /* Tamaño de fuente para el título */
     font-weight: bold;
 }
 
-/* Estilo del nav dentro del header */
+/* Estilo del nav */
 nav ul {
     list-style: none;
     padding: 0;
-    margin: 5px 0 0; /* Reducido a la mitad del margen original */
-    text-align: center;
+    margin: 0;
 }
 
 nav ul li {
     display: inline;
-    margin-right: 10px; /* Reducido a la mitad del margen derecho original */
+    margin-right: 10px;
 }
 
 nav ul li a {
     color: #fff;
     text-decoration: none;
-    font-size: 14px; /* Reducido a la mitad del tamaño de fuente original */
-}
-
-nav ul li a:hover {
-    text-decoration: underline;
 }
 
 /* Estilo del carrusel */
 .carousel {
-    max-width: 800px;
-    margin: 20px auto;
+    max-width: 800px; /* Ajusta el ancho máximo según tus necesidades */
+    margin: 0 auto; /* Centra el carrusel horizontalmente */
 }
 
 .carousel-inner img {
     width: 100%;
-    height: auto;
+    height: auto; /* Mantiene la relación de aspecto */
 }
 
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo semi-transparente para las flechas */
 }
 
 /* Estilo de las secciones */
@@ -64,38 +57,31 @@ section {
     padding: 20px;
 }
 
-/* Encabezados personalizados para "Servicios", "Contacto" y "Horarios" */
-#services h2, #schedules h2, #contact h2 {
-    font-size: 28px; /* Tamaño de fuente más grande para los encabezados */
-    font-weight: bold; /* Negrita para los encabezados */
-    color: #007bff; /* Color de texto personalizado */
-    border-bottom: 3px solid #007bff; /* Línea debajo del encabezado */
-    padding-bottom: 10px; /* Espacio debajo del encabezado */
-    margin-bottom: 0; /* Eliminar espacio debajo del encabezado */
+section h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
 }
 
-/* Estilo específico para la sección "Servicios" */
+/* Estilo de la sección "Nosotros" */
+#about {
+    padding: 20px;
+}
+
+#about h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* Estilo de la sección "Servicios" */
 #services {
-    background-color: #f9f9f9; /* Color de fondo para destacar la sección */
-    border-radius: 8px; /* Bordes redondeados */
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Sombra para profundidad */
+    padding: 20px;
 }
 
-/* Estilo específico para la sección "Horarios" */
-#schedules {
-    background-color: #e9ecef; /* Color de fondo para destacar la sección */
-    border-radius: 8px; /* Bordes redondeados */
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Sombra para profundidad */
+#services h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
 }
 
-/* Estilo específico para la sección "Contacto" */
-#contact {
-    background-color: #ffffff; /* Color de fondo blanco para la sección de contacto */
-    border-radius: 8px; /* Bordes redondeados */
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Sombra para profundidad */
-}
-
-/* Estilo de la lista de servicios */
 .list-group-item {
     display: flex;
     align-items: center;
@@ -110,7 +96,7 @@ section {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     gap: 20px;
-    padding: 20px;
+    padding: 20px; /* Espacio alrededor de la cuadrícula */
 }
 
 .grid-item {
@@ -160,6 +146,7 @@ footer {
     bottom: 0;
 }
 
+/* Estilo de los enlaces dentro del footer */
 footer a {
     color: #fff;
     text-decoration: none;
@@ -193,7 +180,7 @@ footer a {
 /* Estilo específico para el carrusel */
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo semi-transparente para las flechas */
 }
 
 /* Estilo de la sección de contacto */
@@ -202,7 +189,8 @@ footer a {
 }
 
 #contact h2 {
-    margin: 0;
+    font-size: 24px;
+    margin-bottom: 20px;
 }
 
 address {
@@ -214,63 +202,41 @@ address {
     margin: 10px 0;
 }
 
-/* Media Queries para mejorar la responsividad */
-
-/* Pantallas de hasta 768px (tabletas y móviles en orientación vertical) */
+/* Media Query para pantallas pequeñas (móviles) */
 @media (max-width: 768px) {
-    header {
-        padding: 10px;
-    }
-
     header h1 {
-        font-size: 16px;
+        font-size: 20px; /* Tamaño de fuente más pequeño para pantallas pequeñas */
     }
-
-    nav ul {
-        padding: 0;
-        margin: 10px 0 0;
-    }
-
-    nav ul li {
-        display: block;
-        margin-bottom: 10px;
-    }
-
-    nav ul li a {
-        font-size: 16px;
+    
+    section h2 {
+        font-size: 20px; /* Ajusta el tamaño de los encabezados en secciones */
     }
 
     .carousel {
-        max-width: 100%;
+        max-width: 100%; /* Asegura que el carrusel se ajuste a la pantalla */
     }
 
     .grid-container {
-        grid-template-columns: 1fr; /* Una columna en dispositivos pequeños */
-    }
-
-    .grid-item {
-        padding: 10px;
-    }
-
-    .table {
-        font-size: 14px; /* Ajusta el tamaño de fuente de la tabla */
-    }
-
-    footer {
-        font-size: 14px;
-        padding: 15px;
-    }
-
-    .btn {
-        padding: 8px 16px;
-        font-size: 14px;
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Ajusta el tamaño de las columnas en pantallas pequeñas */
     }
 }
 
-/* Pantallas de hasta 576px (móviles en orientación vertical) */
-@media (max-width: 576px) {
+/* Media Query para pantallas muy pequeñas (móviles en modo vertical) */
+@media (max-width: 480px) {
+    header {
+        padding: 5px; /* Menos padding para pantallas muy pequeñas */
+    }
+
+    header h1 {
+        font-size: 18px; /* Tamaño de fuente aún más pequeño */
+    }
+
+    section h2 {
+        font-size: 18px; /* Ajuste adicional para encabezados en secciones */
+    }
+
     .btn {
-        padding: 6px 12px;
-        font-size: 12px;
+        font-size: 14px; /* Tamaño de fuente de botones para pantallas pequeñas */
+        padding: 8px 16px;
     }
 }

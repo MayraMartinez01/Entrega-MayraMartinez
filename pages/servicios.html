@@ -1,77 +1,32 @@
 <!DOCTYPE html>
 <html lang="es">
-<head></head>
-
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Servicios - Gimnasio Montevideo</title>
     <link rel="stylesheet" href="../css/style.css">
-    <!-- Enlace al archivo CSS de Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <!-- Enlace al archivo CSS de Bootstrap -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
     <style>
-        /* Estilo del header */
-header {
-    background-color: #333;
-    color: #fff;
-    padding: 10px;
-    text-align: center;
-    position: relative; /* Asegura que el header esté posicionado correctamente */
-    z-index: 10; /* Asegura que el header esté encima de otros elementos */
-}
-
-header h1 {
-    margin: 0;
-    font-size: 2rem; /* Tamaño de fuente del título */
-}
-
-header nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 10px 0 0; /* Espaciado del nav debajo del título */
-}
-
-header nav ul li {
-    display: inline;
-    margin: 0 15px;
-}
-
-header nav ul li a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 1rem; /* Tamaño de fuente del enlace */
-}
-
-header nav ul li a:hover {
-    text-decoration: underline;
-}
-
-        /* Estilos globales para eliminar márgenes y rellenos inesperados */
-        body, h1, h2, h3, p {
-            margin: 0;
-            padding: 0;
-        }
-        /* Reset general para márgenes y paddings */
-        body, header, section, footer {
-            margin: 0;
-            padding: 0;
-            font-family: Arial, sans-serif;
-        }
-
         /* Estilo del header */
         header {
             background-color: #333;
             color: #fff;
             padding: 10px;
             text-align: center;
-            position: relative; /* Asegura que el header esté posicionado correctamente */
-            z-index: 10; /* Asegura que el header esté encima de otros elementos */
+            position: relative;
+            z-index: 10;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2rem;
         }
 
         header nav ul {
             list-style: none;
             padding: 0;
+            margin: 10px 0 0;
         }
 
         header nav ul li {
@@ -82,34 +37,47 @@ header nav ul li a:hover {
         header nav ul li a {
             color: #fff;
             text-decoration: none;
+            font-size: 1rem;
         }
 
         header nav ul li a:hover {
             text-decoration: underline;
         }
 
+        /* Estilos globales para eliminar márgenes y rellenos inesperados */
+        body, h1, h2, h3, p {
+            margin: 0;
+            padding: 0;
+        }
+
+        body, header, section, footer {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
         /* Estilo del carrusel */
         .carousel {
-            max-width: 1000px; /* Ajusta el ancho máximo del carrusel */
-            margin: 20px auto; /* Centra el carrusel horizontalmente y añade margen vertical */
-            height: 500px; /* Ajusta la altura del carrusel */
+            max-width: 1000px;
+            margin: 20px auto;
+            height: 500px;
         }
 
         .carousel-inner {
-            height: 100%; /* Hace que el contenedor interno ocupe toda la altura del carrusel */
+            height: 100%;
             position: relative;
-            overflow: hidden; /* Asegura que el contenido no se desborde */
+            overflow: hidden;
         }
 
         .carousel-inner img {
-            width: 100%; /* Ajusta el ancho de las imágenes al ancho del carrusel */
-            height: 100%; /* Ajusta la altura de las imágenes al contenedor */
-            object-fit: cover; /* Ajusta la imagen para que cubra el contenedor sin distorsionar */
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
         }
 
         .carousel-control-prev-icon,
         .carousel-control-next-icon {
-            background-color: rgba(0, 0, 0, 0.5); /* Fondo semi-transparente para las flechas */
+            background-color: rgba(0, 0, 0, 0.5);
         }
 
         /* Estilo de las secciones con cuadrícula */
@@ -157,16 +125,23 @@ header nav ul li a:hover {
 </head>
 <body>
     <header>
-        <h1>Gimnasio Montevideo</h1>
-        <nav>
-            <ul>
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="nosotros.html">Nosotros</a></li>
-                <li><a href="servicios.html">Servicios</a></li>
-                <li><a href="horarios.html">Horarios</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
-            </ul>
-        </nav>
+        <div class="container">
+            <h1>Gimnasio Montevideo</h1>
+            <nav>
+                <button class="menu-toggle" aria-label="Abrir menú">
+                    <span class="menu-icon"></span>
+                    <span class="menu-icon"></span>
+                    <span class="menu-icon"></span>
+                </button>
+                <ul class="nav-menu">
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="nosotros.html">Nosotros</a></li>
+                    <li><a href="servicios.html">Servicios</a></li>
+                    <li><a href="horarios.html">Horarios</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
     <section id="services">
@@ -256,30 +231,13 @@ header nav ul li a:hover {
                 </div>
                 <div class="trainer">
                     <h3>María Fernández</h3>
-                    <p>Instructora de Yoga y Pilates, especializada en técnicas de relajación y bienestar.</p>
+                    <p>Especialista en Yoga y bienestar, con un enfoque integral en la salud física y mental.</p>
+                </div>
+                <div class="trainer">
+                    <h3>Juan García</h3>
+                    <p>Experto en entrenamiento funcional y deportes de resistencia, con un enfoque en la mejora del rendimiento.</p>
                 </div>
             </div>
-        </div>
-    </section>
-
-    <section id="contact-form">
-        <h2>Consulta sobre nuestros servicios</h2>
-        <div class="container">
-            <form action="submit_form.php" method="post">
-                <div class="mb-3">
-                    <label for="name" class="form-label">Nombre</label>
-                    <input type="text" class="form-control" id="name" name="name" required>
-                </div>
-                <div class="mb-3">
-                    <label for="email" class="form-label">Correo Electrónico</label>
-                    <input type="email" class="form-control" id="email" name="email" required>
-                </div>
-                <div class="mb-3">
-                    <label for="message" class="form-label">Mensaje</label>
-                    <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
-                </div>
-                <button type="submit" class="btn btn-primary">Enviar</button>
-            </form>
         </div>
     </section>
 
@@ -289,7 +247,6 @@ header nav ul li a:hover {
         <a href="https://www.facebook.com/" class="social-icon" target="_blank"><i class="fab fa-facebook-f"></i></a>
     </footer>
 
-    <!-- Enlace a los scripts de Bootstrap -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
